@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Forge Web Studio — Websites for Plumbers, Electricians &amp; HVAC</title>
-<meta name="description" content="Forge Web Studio builds fast, mobile-first websites for plumbers, electricians, and HVAC companies. Delivered in 7 days, designed to turn searches into booked jobs.">
+<meta name="description" content="Forge Web Studio builds fast, mobile-first websites for plumbers, electricians, and HVAC companies — plus AI systems: missed-call text-back, AI chat, review automation, and an AI receptionist.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23bd9226'/><text x='50' y='70' font-size='60' text-anchor='middle' font-family='Georgia,serif' font-weight='bold' fill='%230e1b33'>F</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -117,6 +117,10 @@ header.scrolled{background:rgba(250,248,243,.94);backdrop-filter:blur(10px);box-
 .price-list li:last-child{border:0}
 .price-list li::before{content:"✓";color:var(--gold-deep);font-weight:700}
 .price-note{text-align:center;color:var(--muted);font-size:14px;margin-top:22px}
+/* ---------- ai systems ---------- */
+.ai-grid{display:grid;gap:18px}
+@media(min-width:900px){.ai-grid{grid-template-columns:repeat(2,1fr)}}
+.ai-flag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-deep);background:var(--gold-soft);border:1px solid rgba(189,146,38,.4);padding:5px 14px;border-radius:999px;margin-bottom:14px}
 /* ---------- faq ---------- */
 details.faq{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:12px;overflow:hidden;box-shadow:0 6px 18px rgba(19,32,57,.04)}
 details.faq summary{padding:20px 22px;cursor:pointer;font-weight:600;font-size:16px;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;color:var(--ink)}
@@ -176,6 +180,7 @@ footer .logo{color:#fff}
       <li><a href="#work">Work</a></li>
       <li><a href="#process">Process</a></li>
       <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#ai">AI Systems</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
     <a href="#contact" class="btn btn-primary btn-sm nav-cta">Get a Free Quote</a>
@@ -185,6 +190,7 @@ footer .logo{color:#fff}
     <a href="#work">Work</a>
     <a href="#process">Process</a>
     <a href="#pricing">Pricing</a>
+    <a href="#ai">AI Systems</a>
     <a href="#faq">FAQ</a>
     <a href="#contact">Get a Free Quote →</a>
   </nav>
@@ -299,7 +305,7 @@ footer .logo{color:#fff}
         <span class="work-tag">Plumbing · Demo Site</span>
         <h3>Apex Plumbing Co.</h3>
         <p>A complete 5-page website for a fictional Austin plumbing company — Home, Services, Service Area, Reviews, and Contact with a working quote form and sticky mobile call bar.</p>
-        <a href="demos/apex-plumbing/" class="btn btn-primary btn-sm">View Live Demo →</a>
+        <a href="demos/apex-plumbing/index.html" class="btn btn-primary btn-sm">View Live Demo →</a>
       </div>
     </div>
     <div class="work-card" style="margin-top:18px">
@@ -317,10 +323,10 @@ footer .logo{color:#fff}
         </div>
       </div>
       <div class="work-body">
-        <span class="work-tag">Electrical · Coming Soon</span>
+        <span class="work-tag">Electrical · Live Demo</span>
         <h3>VoltEdge Electric</h3>
-        <p>Our second demo — a Denver electrical contractor site — is on the workbench now. Check back soon, or get in touch and yours could be next.</p>
-        <a href="#contact" class="btn btn-ghost btn-sm">Start Your Project →</a>
+        <p>A complete 5-page website for a fictional Denver electrical contractor — Home, Services, Service Area, Reviews, and Contact with a working quote form and sticky mobile call bar.</p>
+        <a href="demos/voltedge-electric/index.html" class="btn btn-primary btn-sm">View Live Demo →</a>
       </div>
     </div>
     <p class="work-note">Demo sites show fictional businesses, built to demonstrate our design and structure.</p>
@@ -412,6 +418,67 @@ footer .logo{color:#fff}
   </div>
 </section>
 
+<!-- ============ AI SYSTEMS ============ -->
+<section id="ai">
+  <div class="wrap">
+    <span class="eyebrow">AI Systems · New</span>
+    <h2 class="section-title">Your website works days. Our AI works nights.</h2>
+    <p class="section-sub">Add-on systems that answer every call, reply to every message, and collect every review — so no job slips through while you're on one. Built for the trades, installed by us, zero tech skills needed from you.</p>
+    <div class="ai-grid">
+      <div class="price-card">
+        <h3>Missed-Call Text-Back</h3>
+        <p class="p-sub">Never lose a job to a missed call again.</p>
+        <div class="price">$497 <small>setup + $97/mo</small></div>
+        <ul class="price-list">
+          <li>Auto text within 60 seconds of a missed call</li>
+          <li>Smart replies that capture the job details</li>
+          <li>After-hours &amp; on-the-job coverage</li>
+          <li>Every conversation logged for you</li>
+        </ul>
+        <a href="#contact" class="btn btn-ghost" style="text-align:center">Add to My Quote</a>
+      </div>
+      <div class="price-card">
+        <h3>AI Website Chat</h3>
+        <p class="p-sub">Your best employee, working your website 24/7.</p>
+        <div class="price">$997 <small>setup + $97/mo</small></div>
+        <ul class="price-list">
+          <li>Answers common questions instantly</li>
+          <li>Qualifies visitors &amp; collects job details</li>
+          <li>Books estimate calls into your calendar</li>
+          <li>Trained on your services &amp; pricing</li>
+        </ul>
+        <a href="#contact" class="btn btn-ghost" style="text-align:center">Add to My Quote</a>
+      </div>
+      <div class="price-card">
+        <h3>Review Booster</h3>
+        <p class="p-sub">Turn finished jobs into 5-star Google reviews.</p>
+        <div class="price">$297 <small>setup + $47/mo</small></div>
+        <ul class="price-list">
+          <li>Automatic review-request texts after jobs</li>
+          <li>Smart follow-up if they don't respond</li>
+          <li>Instant alerts when new reviews land</li>
+          <li>Review replies drafted for you</li>
+        </ul>
+        <a href="#contact" class="btn btn-ghost" style="text-align:center">Add to My Quote</a>
+      </div>
+      <div class="price-card featured">
+        <span class="price-flag">Biggest job saver</span>
+        <h3>AI Receptionist</h3>
+        <p class="p-sub">Every call answered, every job captured.</p>
+        <div class="price">$1,497 <small>setup + $197/mo</small></div>
+        <ul class="price-list">
+          <li>AI voice agent answers calls 24/7</li>
+          <li>Takes job details &amp; books appointments</li>
+          <li>Covers after-hours &amp; overflow calls</li>
+          <li>Instant text summary after every call</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary" style="text-align:center">Add to My Quote</a>
+      </div>
+    </div>
+    <p class="price-note">Add-ons work with any Forge website — or standalone with your existing site. Monthly plans cancel anytime.</p>
+  </div>
+</section>
+
 <!-- ============ FAQ ============ -->
 <section id="faq">
   <div class="wrap" style="max-width:800px">
@@ -437,6 +504,10 @@ footer .logo{color:#fff}
     <details class="faq">
       <summary>Will my site show up on Google?</summary>
       <div class="faq-body">Every site ships with SEO fundamentals: proper titles, local service-area pages, fast load times, and mobile-friendly design — the groundwork Google rewards. (Full local-SEO campaigns are a separate conversation.)</div>
+    </details>
+    <details class="faq">
+      <summary>Do I need the AI systems to get a website?</summary>
+      <div class="faq-body">No. The website stands on its own, and the AI systems stand on theirs — they work with any Forge website or with a site you already have. Most clients start with the website and add a system once the calls pick up.</div>
     </details>
   </div>
 </section>
@@ -513,6 +584,7 @@ footer .logo{color:#fff}
       <li><a href="#work">Work</a></li>
       <li><a href="#process">Process</a></li>
       <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#ai">AI Systems</a></li>
       <li><a href="mailto:om@forgewebstudio.me">om@forgewebstudio.me</a></li>
     </ul>
     <small>© <span id="year">2026</span> Forge Web Studio. All rights reserved.</small>
